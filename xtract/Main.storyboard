@@ -119,6 +119,50 @@
             </objects>
             <point key="canvasLocation" x="580" y="-110"/>
         </scene>
+        <!--Crop View Controller-->
+        <scene sceneID="ZtZ-aS-CJH">
+            <objects>
+                <viewController storyboardIdentifier="CropVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3HQ-qn-jDg" customClass="CropViewController" customModule="xtract" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Ji-VV-Y6A"/>
+                        <viewControllerLayoutGuide type="bottom" id="WBp-Iz-Ltl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FvF-4F-KYt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list" translatesAutoresizingMaskIntoConstraints="NO" id="mNl-ob-A4a">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="mNl-ob-A4a" secondAttribute="height" multiplier="375:647" id="MZ5-48-XMq"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="5Sp-Sf-ywW" appends="YES" id="p8E-GB-AFv"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mNl-ob-A4a" firstAttribute="top" secondItem="4Ji-VV-Y6A" secondAttribute="bottom" id="LUL-0K-GN3"/>
+                            <constraint firstItem="WBp-Iz-Ltl" firstAttribute="top" secondItem="mNl-ob-A4a" secondAttribute="bottom" id="Mhg-dt-TFT"/>
+                            <constraint firstItem="mNl-ob-A4a" firstAttribute="leading" secondItem="FvF-4F-KYt" secondAttribute="leading" id="naw-JW-Qov"/>
+                            <constraint firstAttribute="trailing" secondItem="mNl-ob-A4a" secondAttribute="trailing" id="sSz-8I-Ups"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="mNl-ob-A4a" id="lfm-lF-5Xb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hMu-ZP-mA1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="5Sp-Sf-ywW">
+                    <connections>
+                        <action selector="pan:" destination="3HQ-qn-jDg" id="5Lc-R6-jip"/>
+                    </connections>
+                </panGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="580" y="-832.53373313343332"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="NGr-mT-8XZ">
             <objects>
