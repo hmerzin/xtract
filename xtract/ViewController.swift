@@ -43,7 +43,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        //let newvc = storyboard?.instantiateViewController(withIdentifier: "CropVC") as! CropViewController
+        let newvc = storyboard?.instantiateViewController(withIdentifier: "CropVC") as! CropViewController
         //self.present(newvc, animated: true)
     }
     
