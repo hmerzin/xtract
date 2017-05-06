@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F71BDF6C1EBE1C7C0027BE6E /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71BDF6B1EBE1C7C0027BE6E /* Realm.framework */; };
+		F71BDF6D1EBE1C7C0027BE6E /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F71BDF6B1EBE1C7C0027BE6E /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F71BDF6F1EBE1C9D0027BE6E /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F71BDF6E1EBE1C9D0027BE6E /* RealmSwift.framework */; };
+		F71BDF701EBE1C9D0027BE6E /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F71BDF6E1EBE1C9D0027BE6E /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F7B40C2C1E49378D004670E1 /* xtractTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B40C2B1E49378D004670E1 /* xtractTests.swift */; };
 		F7B40C371E49378E004670E1 /* xtractUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B40C361E49378E004670E1 /* xtractUITests.swift */; };
 		F7B40E441E493B85004670E1 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F7B40E431E493B85004670E1 /* Info.plist */; };
@@ -14,9 +18,6 @@
 		F7B40E481E495389004670E1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B40E471E495389004670E1 /* DetailViewController.swift */; };
 		F7B40E4A1E495601004670E1 /* Xtracted.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B40E491E495601004670E1 /* Xtracted.swift */; };
 		F7B40E4C1E4A6E52004670E1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B40E4B1E4A6E52004670E1 /* TableViewController.swift */; };
-		F7B410441E4A7B52004670E1 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B410431E4A7B52004670E1 /* Realm.framework */; };
-		F7B410451E4A7DEC004670E1 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7B410431E4A7B52004670E1 /* Realm.framework */; };
-		F7B410461E4A7DEC004670E1 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F7B410431E4A7B52004670E1 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F7B410481E4A805E004670E1 /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B410471E4A805E004670E1 /* Persistance.swift */; };
 		F7B4104B1E4BE443004670E1 /* new.PNG in Resources */ = {isa = PBXBuildFile; fileRef = F7B4104A1E4BE443004670E1 /* new.PNG */; };
 		F7B4104D1E4BE44D004670E1 /* err.PNG in Resources */ = {isa = PBXBuildFile; fileRef = F7B4104C1E4BE44D004670E1 /* err.PNG */; };
@@ -117,8 +118,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F7B410461E4A7DEC004670E1 /* Realm.framework in Embed Frameworks */,
+				F71BDF6D1EBE1C7C0027BE6E /* Realm.framework in Embed Frameworks */,
 				F7B4149E1E4C20F6004670E1 /* Alamofire.framework in Embed Frameworks */,
+				F71BDF701EBE1C9D0027BE6E /* RealmSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,6 +128,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F71BDF6B1EBE1C7C0027BE6E /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		F71BDF6E1EBE1C9D0027BE6E /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		F7B40C101E49378D004670E1 /* xtract.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xtract.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B40C271E49378D004670E1 /* xtractTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = xtractTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7B40C2B1E49378D004670E1 /* xtractTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = xtractTests.swift; sourceTree = "<group>"; };
@@ -139,7 +143,6 @@
 		F7B40E471E495389004670E1 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		F7B40E491E495601004670E1 /* Xtracted.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Xtracted.swift; sourceTree = "<group>"; };
 		F7B40E4B1E4A6E52004670E1 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		F7B410431E4A7B52004670E1 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		F7B410471E4A805E004670E1 /* Persistance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
 		F7B4104A1E4BE443004670E1 /* new.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = new.PNG; sourceTree = "<group>"; };
 		F7B4104C1E4BE44D004670E1 /* err.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = err.PNG; sourceTree = "<group>"; };
@@ -165,9 +168,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7B410451E4A7DEC004670E1 /* Realm.framework in Frameworks */,
-				F7B410441E4A7B52004670E1 /* Realm.framework in Frameworks */,
+				F71BDF6C1EBE1C7C0027BE6E /* Realm.framework in Frameworks */,
 				F7B4149D1E4C20F6004670E1 /* Alamofire.framework in Frameworks */,
+				F71BDF6F1EBE1C9D0027BE6E /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,9 +194,10 @@
 		F7B40C071E49378D004670E1 = {
 			isa = PBXGroup;
 			children = (
+				F71BDF6E1EBE1C9D0027BE6E /* RealmSwift.framework */,
+				F71BDF6B1EBE1C7C0027BE6E /* Realm.framework */,
 				F7B414821E4C1BD3004670E1 /* Alamofire.xcodeproj */,
 				F7B410491E4BE432004670E1 /* Screenshots */,
-				F7B410431E4A7B52004670E1 /* Realm.framework */,
 				F7B40C121E49378D004670E1 /* xtract */,
 				F7B40C2A1E49378D004670E1 /* xtractTests */,
 				F7B40C351E49378E004670E1 /* xtractUITests */,
@@ -656,6 +660,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"${PROJECT_DIR}",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Alamofire",
 				);
 				INFOPLIST_FILE = xtract/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
@@ -678,6 +683,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"${PROJECT_DIR}",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/Alamofire",
 				);
 				INFOPLIST_FILE = xtract/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;

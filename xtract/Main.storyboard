@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KWQ-EW-shg">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KWQ-EW-shg">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -143,17 +143,25 @@
                                     <outletCollection property="gestureRecognizers" destination="qS6-zP-TCE" appends="YES" id="OJ1-US-EQP"/>
                                 </connections>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zew-DO-ccG">
+                                <rect key="frame" x="323" y="617" width="30" height="30"/>
+                                <state key="normal" image="crop"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="qtE-So-HZ2" secondAttribute="trailing" constant="52" id="5p9-1E-3r9"/>
                             <constraint firstItem="mNl-ob-A4a" firstAttribute="leading" secondItem="FvF-4F-KYt" secondAttribute="leading" id="6tQ-Ef-DzO"/>
+                            <constraint firstItem="zew-DO-ccG" firstAttribute="top" secondItem="4Ji-VV-Y6A" secondAttribute="bottom" constant="597" id="8Kx-zn-aU2"/>
                             <constraint firstItem="qtE-So-HZ2" firstAttribute="leading" secondItem="FvF-4F-KYt" secondAttribute="leading" constant="51" id="8Mo-Wx-qou"/>
                             <constraint firstAttribute="trailing" secondItem="mNl-ob-A4a" secondAttribute="trailing" id="H39-U4-gsm"/>
+                            <constraint firstItem="WBp-Iz-Ltl" firstAttribute="top" secondItem="zew-DO-ccG" secondAttribute="bottom" constant="20" id="J6y-Ab-mEe"/>
+                            <constraint firstItem="zew-DO-ccG" firstAttribute="leading" secondItem="FvF-4F-KYt" secondAttribute="leadingMargin" constant="307" id="Qqh-R5-rJI"/>
                             <constraint firstItem="mNl-ob-A4a" firstAttribute="top" secondItem="4Ji-VV-Y6A" secondAttribute="bottom" id="Ugd-sb-JSe"/>
                             <constraint firstItem="WBp-Iz-Ltl" firstAttribute="top" secondItem="mNl-ob-A4a" secondAttribute="bottom" id="hEl-cq-Qil"/>
                             <constraint firstItem="qtE-So-HZ2" firstAttribute="top" secondItem="4Ji-VV-Y6A" secondAttribute="bottom" constant="259" id="mzD-fv-YqD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="zew-DO-ccG" secondAttribute="trailing" constant="6" id="s1O-nK-pxc"/>
                             <constraint firstItem="WBp-Iz-Ltl" firstAttribute="top" secondItem="qtE-So-HZ2" secondAttribute="bottom" constant="260" id="yZN-fc-t28"/>
                         </constraints>
                     </view>
@@ -214,10 +222,10 @@
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="75" id="nWE-eh-oxv" customClass="Cell" customModule="xtract" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="374" height="75"/>
+                                        <rect key="frame" x="0.0" y="28" width="374.5" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nWE-eh-oxv" id="84N-1T-5JB">
-                                            <rect key="frame" x="0.0" y="0.0" width="374.5" height="74"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374.5" height="74.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wb6-n1-BBP">
@@ -402,6 +410,7 @@
         <image name="album" width="165" height="165"/>
         <image name="camera" width="175" height="175"/>
         <image name="coral rounded back" width="102" height="100"/>
+        <image name="crop" width="132" height="132"/>
         <image name="gray copy" width="61" height="70"/>
         <image name="list" width="24" height="24"/>
     </resources>
