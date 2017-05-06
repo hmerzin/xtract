@@ -138,6 +138,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qtE-So-HZ2">
                                 <rect key="frame" x="51" y="279" width="272" height="128"/>
                                 <gestureRecognizers/>
+                                <edgeInsets key="layoutMargins" top="0.0" left="0.0" bottom="0.0" right="0.0"/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="qS6-zP-TCE" appends="YES" id="OJ1-US-EQP"/>
                                 </connections>
@@ -153,11 +154,11 @@
                             <constraint firstItem="mNl-ob-A4a" firstAttribute="top" secondItem="4Ji-VV-Y6A" secondAttribute="bottom" id="Ugd-sb-JSe"/>
                             <constraint firstItem="WBp-Iz-Ltl" firstAttribute="top" secondItem="mNl-ob-A4a" secondAttribute="bottom" id="hEl-cq-Qil"/>
                             <constraint firstItem="qtE-So-HZ2" firstAttribute="top" secondItem="4Ji-VV-Y6A" secondAttribute="bottom" constant="259" id="mzD-fv-YqD"/>
-                            <constraint firstItem="qtE-So-HZ2" firstAttribute="bottom" secondItem="WBp-Iz-Ltl" secondAttribute="top" constant="-260" id="snc-Le-Sh8"/>
+                            <constraint firstItem="WBp-Iz-Ltl" firstAttribute="top" secondItem="qtE-So-HZ2" secondAttribute="bottom" constant="260" id="yZN-fc-t28"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="bottomConstraint" destination="snc-Le-Sh8" id="ihL-p5-6rE"/>
+                        <outlet property="bottomConstraint" destination="yZN-fc-t28" id="ycb-EI-SGI"/>
                         <outlet property="cropView" destination="qtE-So-HZ2" id="5bi-Ne-7pz"/>
                         <outlet property="cropViewGestureRecognizer" destination="qS6-zP-TCE" id="yzv-Nz-YiH"/>
                         <outlet property="imageView" destination="mNl-ob-A4a" id="lfm-lF-5Xb"/>
@@ -213,7 +214,7 @@
                                 </constraints>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="75" id="nWE-eh-oxv" customClass="Cell" customModule="xtract" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="75"/>
+                                        <rect key="frame" x="0.0" y="28" width="374" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nWE-eh-oxv" id="84N-1T-5JB">
                                             <rect key="frame" x="0.0" y="0.0" width="374.5" height="74"/>

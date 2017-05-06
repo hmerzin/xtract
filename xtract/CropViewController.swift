@@ -42,7 +42,7 @@ class CropViewController: UIViewController {
     func adjustConstraints(sender: UILongPressGestureRecognizer) {
         let cropViewBounds = self.cropView.bounds
         let cropLocation = sender.location(in: self.cropView)
-        
+        print(sender.location(in: self.imageView).y, cropViewBounds.maxY)
         if(cropLocation.x > cropViewBounds.minX - 15 && cropLocation.x < cropViewBounds.minX + 15) {
             self.leftConstraint.constant = sender.location(in: imageView).x
         }
@@ -55,9 +55,10 @@ class CropViewController: UIViewController {
             self.rightConstraint.constant = self.view.bounds.width - sender.location(in: imageView).x
         }
         
-        //if(cropLocation.y > cropViewBounds.maxY - 15 && cropLocation.y < cropViewBounds.maxY + 15) {
-            self.bottomConstraint.constant = sender.location(in: imageView).y //self.view.bounds.height - sender.location(in: imageView).y
-        //}
+        if(cropLocation.y > cropViewBounds.maxY - 15 && cropLocation.y < cropViewBounds.maxY + 15) {
+            self.bottomConstraint.constant = self.view.bounds.height - sender.location(in: imageView).y
+        }
+        
        
     }
     
